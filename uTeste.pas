@@ -28,6 +28,8 @@ type
     OpJson: TOpenDialog;
     btnCarregarJson: TButton;
     btnExibirMenor: TButton;
+    gbAlgoritmo: TGroupBox;
+    Button1: TButton;
     procedure edtFibonacciKeyPress(Sender: TObject; var Key: Char);
     procedure btnInverterStringClick(Sender: TObject);
     procedure btnFibonacciClick(Sender: TObject);
@@ -37,6 +39,7 @@ type
     procedure btnCarregarJsonClick(Sender: TObject);
     procedure btnExibirMaiorClick(Sender: TObject);
     procedure btnExibirMenorClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
     FTotal, FPercentual, FMenorValor, FMaiorValor : Double;
@@ -128,6 +131,24 @@ begin
   //Exibe o valor para o usuário...
   lbStringInvertida.Visible := True;
   lbStringInvertida.Caption := strInversa;
+end;
+
+procedure TfrmTesteTarget.Button1Click(Sender: TObject);
+var
+  Soma, K, Z : Integer;
+begin
+  Z := 13;
+  K := 0;
+  Soma := 0;
+
+  while K < Z do
+  begin
+    K := K + 1;
+    Soma := Soma + K;
+    ShowMessage('Valor de K: '+ IntToStr(K) + ' - Valor da Soma: ' + IntToStr(Soma));
+  end;
+
+  ShowMessage('Valor da Soma: ' + IntToStr(Soma));
 end;
 
 procedure TfrmTesteTarget.btnExibirMaiorClick(Sender: TObject);

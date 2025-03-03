@@ -2,7 +2,7 @@ object frmTesteTarget: TfrmTesteTarget
   Left = 0
   Top = 0
   Caption = 'Teste'
-  ClientHeight = 479
+  ClientHeight = 599
   ClientWidth = 662
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -25,9 +25,6 @@ object frmTesteTarget: TfrmTesteTarget
       '<< Fun'#231#227'o para informar se um n'#250'mero pertence a sequ'#234'ncia de Fib' +
       'onacci >>'
     TabOrder = 0
-    ExplicitLeft = 224
-    ExplicitTop = 232
-    ExplicitWidth = 185
     object edtFibonacci: TEdit
       Left = 24
       Top = 24
@@ -54,8 +51,6 @@ object frmTesteTarget: TfrmTesteTarget
     Align = alTop
     Caption = '<< Fun'#231#227'o para Inverter String >>'
     TabOrder = 1
-    ExplicitTop = 8
-    ExplicitWidth = 649
     object lbStringInvertida: TLabel
       Left = 248
       Top = 32
@@ -96,8 +91,6 @@ object frmTesteTarget: TfrmTesteTarget
     Align = alTop
     Caption = '<< Fun'#231#227'o para calcular percentual de faturmaneto por Estado >>'
     TabOrder = 2
-    ExplicitTop = 216
-    ExplicitWidth = 649
     object Label1: TLabel
       Left = 24
       Top = 24
@@ -159,7 +152,6 @@ object frmTesteTarget: TfrmTesteTarget
     Align = alTop
     Caption = '<< Fun'#231#227'o Para Ler Arquivo e Calcular valores >>'
     TabOrder = 3
-    ExplicitTop = 218
     object Label2: TLabel
       Left = 24
       Top = 24
@@ -201,6 +193,27 @@ object frmTesteTarget: TfrmTesteTarget
       Caption = 'Exibir Menor Valor'
       TabOrder = 3
       OnClick = btnExibirMenorClick
+    end
+  end
+  object gbAlgoritmo: TGroupBox
+    Left = 0
+    Top = 420
+    Width = 662
+    Height = 105
+    Align = alTop
+    Caption = '<< Algoritmo de Entrada e Exibe Soma >>'
+    TabOrder = 4
+    ExplicitLeft = 136
+    ExplicitTop = 464
+    ExplicitWidth = 185
+    object Button1: TButton
+      Left = 32
+      Top = 32
+      Width = 201
+      Height = 25
+      Caption = 'Calcular Valor da Soma'
+      TabOrder = 0
+      OnClick = Button1Click
     end
   end
   object OpJson: TOpenDialog
